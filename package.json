@@ -1,0 +1,47 @@
+{
+  "name": "tutor-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "家教助手：家教单导入 / 排课 / 日历 / 路线，uni-app + 腾讯云 CloudBase",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev:h5": "uni",
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:h5": "uni build",
+    "build:mp-weixin": "uni build -p mp-weixin",
+    "type-check": "vue-tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@cloudbase/adapter-interface": "^0.7.1",
+    "@cloudbase/adapter-uni-app": "^1.0.0-beta.1",
+    "@cloudbase/adapter-wx_mp": "^1.4.0",
+    "@cloudbase/js-sdk": "^2.17.5",
+    "@cloudbase/wx-cloud-client-sdk": "^1.8.11",
+    "@dcloudio/uni-app": "3.0.0-4060620250520001",
+    "@dcloudio/uni-components": "3.0.0-4060620250520001",
+    "@dcloudio/uni-h5": "3.0.0-4060620250520001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-4060620250520001",
+    "@mattiasbuelens/web-streams-adapter": "^0.1.0",
+    "bson": "^7.3.3",
+    "jwt-decode": "^3.1.2",
+    "text-encoding-shim": "^1.0.5",
+    "vue": "3.4.21",
+    "web-streams-polyfill": "^4.3.0",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "3.4.15",
+    "@dcloudio/uni-cli-shared": "3.0.0-4060620250520001",
+    "@dcloudio/uni-stacktracey": "3.0.0-4060620250520001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-4070520250711001",
+    "sass": "^1.89.2",
+    "typescript": "^4.9.4",
+    "vite": "5.2.8",
+    "vitest": "^2.1.9",
+    "vue-tsc": "^1.0.24"
+  }
+}

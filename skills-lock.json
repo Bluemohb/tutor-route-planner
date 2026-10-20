@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "wechatide-skill": {
+      "source": "../../../../skills/wechatide-skill",
+      "sourceType": "local",
+      "computedHash": "e140e0633436d991d0d699c15d5e8718d83fd0d49ed637a50dfb884823454738"
+    }
+  }
+}
