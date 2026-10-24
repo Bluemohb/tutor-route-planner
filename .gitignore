@@ -10,3 +10,9 @@ unpackage
 
 # 调试产物：微信开发者工具登录二维码，不入库
 docs/images/login-qrcode.jpg
+
+# AI 工具链的技能镜像（同一份 wechatide-skill 的 4 份拷贝，与本项目无关）
+.agents/
+.claude/
+.codebuddy/
+.hermes/
