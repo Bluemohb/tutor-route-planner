@@ -7,3 +7,6 @@ dist
 unpackage
 .tmp
 .workbuddy-ai
+
+# 调试产物：微信开发者工具登录二维码，不入库
+docs/images/login-qrcode.jpg

@@ -1,5 +1,19 @@
 # 家教助手
 
+> **关于这个项目**
+>
+> 本项目由 **DeepSeek-V4.1-Flash 一句话生成，未经修改**。
+>
+> 所用提示词：
+>
+> > 我想创建一个小程序，功能是：家教单的导入（从微信群、或导入Excel表）、路线显示、家教的排课、日历显示。微信群中群主每次发的消息类似下面这种： ....
+>
+> 提示词后面跟了三条真实的群消息样例（通州大学生单 / BJ26062502 / H0032026），解析引擎就是照着它们写的。
+>
+> 仓库初始化（`git init`）和 `appid` 配置是后续补做的，不涉及业务代码改动。
+
+![页面总览](docs/images/preview-all.jpg)
+
 家教单从微信群里一条条复制、再手工整理到表格里，费时又容易漏。这个小程序把这件事变成：**粘贴 → 自动拆成结构化单子 → 排课 → 日历 → 跑单路线**。
 
 uni-app + Vue3 + TypeScript，一套代码出微信小程序和 H5；数据默认存本机，可选接入腾讯云开发做多端同步。
@@ -39,7 +53,7 @@ pnpm build:mp-weixin
 # 然后用微信开发者工具打开 dist/build/mp-weixin
 ```
 
-> 发布前在 `src/manifest.json` 里填自己的 `appid`。
+> `appid` 已填在 `src/manifest.json` 的 `mp-weixin.appid`，换项目时改这一处即可，构建产物会自动带出。
 
 ---
 
@@ -143,7 +157,10 @@ src/
     ├── import/          # 导入
     ├── schedule/        # 排课列表 / 编辑
     └── settings/        # 设置
-tests/parser.test.ts     # 解析引擎回归测试
+tests/
+├── parser.test.ts       # 解析引擎回归测试
+└── sheet.test.ts        # Excel 导入回归测试
+docs/images/             # 页面截图（preview-all.jpg 为总览图）
 ```
 
 ## 已知边界
